@@ -14,10 +14,6 @@ A lot of what we will learn is not really AWS specific - and the Infrastructure 
 
 ## The Goal
 
-The goal is to create a system like this:
-
-![Overall System Diagram](img-0-goal.png)
-
 In a nutshell:
 
 - We have a set of homogenous Consul nodes
