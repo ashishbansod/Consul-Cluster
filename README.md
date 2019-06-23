@@ -72,6 +72,7 @@ terraform destroy
 The module has the following structure:
 
 ```
+provider.tf               # Configure the AWS Provider
 main.tf                   # Cluster definition.
 variables.tf              # Basic config.
 modules/consul/main.tf    # Main cluster setup.
@@ -81,7 +82,7 @@ modules/consul/01-vpc.tf  # Network configuration. Defines the VPC, subnets, acc
 modules/consul/02-consul-node-role.tf  # Defines policies and a role for cluster nodes.
 modules/consul/files/consul-node.sh # Setup script for the cluster nodes.
 example-service/          # A goofy example microservice used to test the project.
-article/                  # The text and images for the article on dwmkerr.com
+
 ```
 
 ## Troubleshooting
