@@ -1,7 +1,7 @@
 # AWS Keypair for SSH
 resource "aws_key_pair" "auth" {
   key_name   = "${var.key_name}"
-  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEArkk8DM5RfV7XKXan7s99X0BiipydcDtntTSTBpBf1yiRSOSuBfbzwdWIehJjo9IEgCHHSnRsdwGWuk04aFeJ4JTwer2SoUAhPS26knxTePatDuAoNBkdA8AlDA5eALjwbh6j/J65jHCMT9C/w2ZS/St989xgURHqYXRStqNASQ0fXzso0BJVKjGSVYh3z3ZE1aDFEwIozOLZaPxgNrQgN/WZ5+U5RzDaPg/zsbtqR22CZCXJ28fZxl4KY8OR2ZNL3ZFx075fo7hoakwkexivmXdlH7HP1I2oDsa+692PL1hYQeiI/QHG1kyp3eDIToQMD937IouXu2farG+IaAWC/Q== rsa-key-20190616"
+  public_key = "public key to ssh the consul node"
 }
 
 // AMIs by region for AWS Optimised Linux
