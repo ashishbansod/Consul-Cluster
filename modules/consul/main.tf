@@ -4,7 +4,7 @@ resource "aws_key_pair" "auth" {
   public_key = "public key to ssh the consul node"
 }
 
-// AMI by region for AWS Optimised Linux
+// AMI for AWS Optimised Linux
 data "aws_ami" "amazonlinux" {
   most_recent = true
 
