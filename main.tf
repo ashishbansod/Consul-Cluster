@@ -29,4 +29,4 @@ module "consul-cluster" {
 output "consul-dns" {
   value = "${module.consul-cluster.consul-dns}"
 }
-root@ip-172-31-33-108:/home/ubuntu/project/te
+
