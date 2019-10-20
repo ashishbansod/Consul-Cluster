@@ -4,7 +4,7 @@ resource "aws_key_pair" "auth" {
   public_key = "public key to ssh the consul node"
 }
 
-// AMIs by region for AWS Optimised Linux
+// AMI by region for AWS Optimised Linux
 data "aws_ami" "amazonlinux" {
   most_recent = true
 
@@ -84,6 +84,7 @@ resource "aws_elb" "consul-lb" {
     target              = "HTTP:8500/ui/"
     interval            = 30
   }
+  
 }
 //  Auto-scaling group for our cluster.
 resource "aws_autoscaling_group" "consul-cluster-asg" {
